@@ -14,3 +14,8 @@ FUNCTION InputPatientProfile (age, gender, phoneNumber)
     STORE "profile" with age, gender, phoneNumber
     RETURN "profile"
 END FUNCTION
+
+FUNCTION DoctorSchedule (day)
+    STORE "schedule" with day
+    RETURN "schedule"
+END FUNCTION
