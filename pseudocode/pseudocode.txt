@@ -1,0 +1,6 @@
+PROGRAM calldoctor
+
+const dentistry = "dentistry"
+const generalDoctor = "generalDoctor"
+var scheduleList = []
+const day = [1, 2, 3, 4, 5, 6, 7] // 1 mereprenstasikan senin dan 7 merepresentasikan minggu
