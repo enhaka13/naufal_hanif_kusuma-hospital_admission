@@ -9,3 +9,8 @@ FUNCTION InputPatientName (firstName, lastName)
     STORE "name" with firstName lastName
     RETURN "name"
 END FUNCTION
+
+FUNCTION InputPatientProfile (age, gender, phoneNumber)
+    STORE "profile" with age, gender, phoneNumber
+    RETURN "profile"
+END FUNCTION
