@@ -1,4 +1,4 @@
-PROGRAM calldoctor
+PROGRAM hospital_admission
 
 const dentistry = "dentistry"
 const generalDoctor = "generalDoctor"
