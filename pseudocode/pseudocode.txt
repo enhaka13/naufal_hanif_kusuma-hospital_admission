@@ -19,3 +19,36 @@ FUNCTION DoctorSchedule (day)
     STORE "schedule" with day
     RETURN "schedule"
 END FUNCTION
+
+IF "dentistry problems"
+    STORE "doctor" with dentistry
+    STORE "patientName" with InputPatientName(Budi, Hartono)
+    STORE "patientProfile" with InputPatientProfile(49, male, +123456)
+    STORE "doctorSchedule" with DoctorSchedule(Monday)
+    IF "isPatientAvailable"
+    STORE scheduleList with doctorSchedule
+    ELSE
+    WHILE "isPatientAvailable" = FALSE
+        DO
+        FOR "i" from 1 in "day"
+            IF "isPatientAvailable" = FALSE
+                i += 1
+            ELSE
+                STORE "isPatientAvailable" = TRUE
+        END FOR
+ELSE
+    STORE "doctor" with generalDoctor
+    STORE "patientName" with InputPatientName(Budi, Hartono)
+    STORE "patientProfile" with InputPatientProfile(49, male, +123456)
+    STORE "doctorSchedule" with DoctorSchedule(Monday)
+    IF "isPatientAvailable"
+    STORE scheduleList with doctorSchedule
+    ELSE
+    WHILE "isPatientAvailable" = FALSE
+        DO
+        FOR "i" from 1 in "day"
+            IF "isPatientAvailable" = FALSE
+                i += 1
+            ELSE
+                STORE "isPatientAvailable" = TRUE
+        END FOR
